@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>forecast weather</title>
+    <link rel="icon" href="images/image-1.jpg" type="image">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/weather-icons-wind.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.min.css">
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Vidaloka|Sahitya|Simonetta|Lobster|Chicle" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="input-group mb-3">
+        <input onkeydown="if (event.keyCode === 13) document.querySelector('#basic-addon2').click()" type="text" class="form-control" placeholder="City Names" aria-label="City Names" aria-describedby="basic-addon2">
+
+        <div id="search-btn" class="input-group-append" onclick="getWeather()">
+            <span class="input-group-text btn btn-outline-dark" id="basic-addon2">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+    </div>
+    <div id="weather-info">
+        <h4 class="city-name"></h4>
+        <div class="icon" class="rain-img"></div>
+        <p class="description"></p>
+        <h3 class="temp"><span></span>°</h3>
+        <p class="temp-range"><i class="fas fa-arrow-down"></i>
+<span class="min"></span>° <i class="fas fa-arrow-up"></i>
+<span class="max"></span>°</p>
+        <div id="weather-container">
+            <div>
+                <p class="day-name1"></p>
+                <div class="forecast-icon1"></div>
+                <p class="date-name1">/</p>
+            </div>
+            <div>
+                <p class="day-name2"></p>
+                <div class="forecast-icon2"></div>
+                <p class="date-name2">/</p>
+            </div>
+            <div>
+                <p class="day-name3"></p>
+                <div class="forecast-icon3"></div>
+                <p class="date-name3">/</p>
+            </div>
+            <div>
+                <p class="day-name4"></p>
+                <div class="forecast-icon4"></div>
+                <p class="date-name4">/</p>
+            </div>
+            <div>
+                <p class="day-name5"></p>
+                <div class="forecast-icon5"></div>
+                <p class="date-name5">/</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

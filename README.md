@@ -1,8 +1,5 @@
 WORLD WEATHER
 -------------
-![background](https://user-images.githubusercontent.com/38943439/46145127-92d38580-c278-11e8-926d-cd26efac2867.jpg)
-
-
 
 You can see website here: https://shamababul123.github.io/forecast-weather/
 
